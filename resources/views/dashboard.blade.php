@@ -14,7 +14,7 @@
                   <span class="block xl:inline">Online Business</span>
                   <span class="block text-indigo-600 xl:inline">Administra Tu empresa de Forma Online</span>
                 </h1>
-                <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Creamos la intranet que tu empresa necesita, ya sea una simple pagina web o carrito de compras, hasta soluciones a medida que se ajusten a las necesidades de su negocio.</p>
+                <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Creamos la intranet que tu empresa necesita, ya sea una simple pagina web o carrito de compras, hasta soluciones a medida que se ajusten a las necesidades de su modelo de negocio.</p>
                 <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div class="rounded-md shadow">
                     <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"> Ver Productos </a>
