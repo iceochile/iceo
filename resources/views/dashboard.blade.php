@@ -65,7 +65,7 @@
         <div class="relative">
           <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
             <div class="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
-              <div>
+              <div class="mt-12">
                 <div>
                   <span class="h-12 w-12 rounded-md flex items-center justify-center bg-indigo-600">
                     <!-- Heroicon name: outline/inbox -->
