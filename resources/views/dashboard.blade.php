@@ -131,7 +131,7 @@
                 <div class="grid grid-cols-2 gap-8 xl:col-span-4">
                 <div class="md:grid md:grid-cols-2 md:gap-8">
                     <div>
-                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Solutions</h3>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Soluciones</h3>
                     <ul role="list" class="mt-4 space-y-4">
                         <li>
                         <a href="#" class="text-base text-gray-300 hover:text-white"> Marketing </a>
@@ -151,7 +151,7 @@
                     </ul>
                     </div>
                     <div class="mt-12 md:mt-0">
-                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Support</h3>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Soporte</h3>
                     <ul role="list" class="mt-4 space-y-4">
                         <li>
                         <a href="#" class="text-base text-gray-300 hover:text-white"> Pricing </a>
@@ -173,7 +173,7 @@
                 </div>
                 <div class="md:grid md:grid-cols-2 md:gap-8">
                     <div>
-                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Compañia</h3>
                     <ul role="list" class="mt-4 space-y-4">
                         <li>
                         <a href="#" class="text-base text-gray-300 hover:text-white"> About </a>
@@ -197,7 +197,7 @@
                     </ul>
                     </div>
                     <div class="mt-12 md:mt-0">
-                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Legal</h3>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Legalidad</h3>
                     <ul role="list" class="mt-4 space-y-4">
                         <li>
                         <a href="#" class="text-base text-gray-300 hover:text-white"> Claim </a>
@@ -215,7 +215,7 @@
                 </div>
                 </div>
                 <div class="mt-12 xl:mt-0">
-                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Language &amp; Currency</h3>
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Idioma &amp; MONEDA</h3>
                 <form class="mt-4 sm:max-w-xs">
                     <fieldset class="w-full">
                     <label for="language" class="sr-only">Language</label>
@@ -236,7 +236,7 @@
                     </div>
                     </fieldset>
                     <fieldset class="mt-4 w-full">
-                    <label for="currency" class="sr-only">Currency</label>
+                    <label for="currency" class="sr-only">MONEDA</label>
                     <div class="mt-1.5 relative">
                         <select id="currency" name="currency" class="appearance-none w-full bg-none bg-gray-700 border border-transparent rounded-md block py-2 pl-3 pr-10 text-base text-white focus:outline-none focus:ring-white focus:border-white sm:text-sm">
                         <option>ARS</option>
@@ -261,14 +261,14 @@
             </div>
             <div class="border-t border-gray-700 pt-8 lg:flex lg:items-center lg:justify-between xl:mt-0">
                 <div>
-                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Subscribe to our newsletter</h3>
-                <p class="mt-2 text-base text-gray-300">The latest news, articles, and resources, sent to your inbox weekly.</p>
+                <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Suscribete a nuestras novedades</h3>
+                <p class="mt-2 text-base text-gray-300">Continuamente enviamos información y ofertas importantes.</p>
                 </div>
                 <form class="mt-4 sm:flex sm:max-w-md lg:mt-0">
                 <label for="email-address" class="sr-only">Email address</label>
-                <input type="email" name="email-address" id="email-address" autocomplete="email" required class="appearance-none min-w-0 w-full bg-white border border-transparent rounded-md py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white focus:border-white focus:placeholder-gray-400 sm:max-w-xs" placeholder="Enter your email">
+                <input type="email" name="email-address" id="email-address" autocomplete="email" required class="appearance-none min-w-0 w-full bg-white border border-transparent rounded-md py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white focus:border-white focus:placeholder-gray-400 sm:max-w-xs" placeholder="Ingresa tu email">
                 <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                    <button type="submit" class="w-full bg-indigo-500 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500">Subscribe</button>
+                    <button type="submit" class="w-full bg-indigo-500 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500">Subscribirme</button>
                 </div>
                 </form>
             </div>
@@ -309,7 +309,7 @@
                     </svg>
                 </a>
                 </div>
-                <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">&copy; 2020 Workflow, Inc. All rights reserved.</p>
+                <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">&copy; 2022 I-Ceo Chile, Inc.Todos los derechos reservados.</p>
             </div>
             </div>
     </footer>
