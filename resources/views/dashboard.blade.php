@@ -142,7 +142,7 @@
                         </li>
         
                         <li>
-                        <a href="#" class="text-base text-gray-300 hover:text-white"> Commerce </a>
+                        <a href="#" class="text-base text-gray-300 hover:text-white">E-Commerce </a>
                         </li>
         
                         <li>
@@ -154,11 +154,11 @@
                     <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Soporte</h3>
                     <ul role="list" class="mt-4 space-y-4">
                         <li>
-                        <a href="#" class="text-base text-gray-300 hover:text-white"> Pricing </a>
+                        <a href="#" class="text-base text-gray-300 hover:text-white"> Precios </a>
                         </li>
         
                         <li>
-                        <a href="#" class="text-base text-gray-300 hover:text-white"> Documentation </a>
+                        <a href="#" class="text-base text-gray-300 hover:text-white"> Documentación </a>
                         </li>
         
                         <li>
@@ -176,7 +176,7 @@
                     <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Compañia</h3>
                     <ul role="list" class="mt-4 space-y-4">
                         <li>
-                        <a href="#" class="text-base text-gray-300 hover:text-white"> About </a>
+                        <a href="#" class="text-base text-gray-300 hover:text-white"> Sobre Nosotros </a>
                         </li>
         
                         <li>
@@ -184,7 +184,7 @@
                         </li>
         
                         <li>
-                        <a href="#" class="text-base text-gray-300 hover:text-white"> Jobs </a>
+                        <a href="#" class="text-base text-gray-300 hover:text-white"> Clientes </a>
                         </li>
         
                         <li>
