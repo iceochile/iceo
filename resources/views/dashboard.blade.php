@@ -33,7 +33,7 @@
     </div>
 
     <div class="max-w-7xl mx-auto relative bg-white pt-16 pb-32 overflow-hidden">
-        <div class="mt-24">
+        <div class="">
           <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
             <div class="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
               <div>
