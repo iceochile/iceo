@@ -59,7 +59,7 @@
                 </div>
                 <div class="mt-6">
                   <h2 class="text-3xl font-extrabold tracking-tight text-gray-900">Pagina Web / Carrito de Compras / Intranet</h2>
-                  <p class="mt-4 text-lg text-gray-500">Con I-CEO obtienes la mejor imágen virtual de tu empresa. También puedes simplificar labores de tus trabajadores ó transformar digitalmente tu negocio con tu propia intranet. </p>
+                  <p class="mt-4 text-lg text-gray-500">Con I-CEO mejorarás la imágen de tú empresa, no solo te brindamos presencia web personalizada, también podrás simplificar labores de tus trabajadores ó transformar digitalmente tu negocio implementando tu propia intranet web y móvil. </p>
                   <div class="flex justify-between mt-6">
                     <a href="#" class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700"> Contratar</a>
                     <a href="#" class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gray-600 hover:bg-gray-700"> Catalogo de Proyectos</a>
