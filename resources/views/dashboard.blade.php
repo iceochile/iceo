@@ -14,7 +14,7 @@
                   <span class="block xl:inline">Project Management</span>
                   <span class="block text-indigo-600 xl:inline">Controla Tu empresa de Forma Online</span>
                 </h1>
-                <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Creamos la realidad virtual que tu empresa necesita, desde una simple pagina web o carrito de compras, hasta flexibles aplicaciones web a medida.</p>
+                <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Creamos la realidad virtual que tu empresa necesita, desde una simple pagina web con carrito de compras, hasta flexibles aplicaciones web a medida.</p>
                 <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                       @auth
                         <div class="rounded-md shadow">
