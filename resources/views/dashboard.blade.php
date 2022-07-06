@@ -47,7 +47,7 @@
                 </div>
                 <div class="mt-6">
                   <h2 class="text-3xl font-extrabold tracking-tight text-gray-900">Pagina Web / Carrito de Compras / Intranet</h2>
-                  <p class="mt-4 text-lg text-gray-500">Presenta en todo el mundo tu empresa con cualquiera de nuestros productos. También podrás simplificar las labores del trabajo o incluso transforma digitalmente tu negocio desarrollando tu propia intranet </p>
+                  <p class="mt-4 text-lg text-gray-500">Presenta en todo el mundo tu empresa con cualquiera de nuestros productos. También podrás simplificar las labores del trabajo o incluso transforma digitalmente tu negocio desarrollando tu propia intranet. </p>
                   <div class="flex justify-between mt-6">
                     <a href="#" class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700"> Contratar</a>
                     <a href="#" class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gray-600 hover:bg-gray-700"> Catalogo de Proyectos</a>
