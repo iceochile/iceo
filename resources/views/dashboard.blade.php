@@ -204,11 +204,11 @@
                         </li>
         
                         <li>
-                        <a href="#" class="text-base text-gray-300 hover:text-white"> Privacy </a>
+                        <a href="#" class="text-base text-gray-300 hover:text-white"> Privacidad </a>
                         </li>
         
                         <li>
-                        <a href="#" class="text-base text-gray-300 hover:text-white"> Terms </a>
+                        <a href="#" class="text-base text-gray-300 hover:text-white"> Terminos y condiciones </a>
                         </li>
                     </ul>
                     </div>
@@ -221,11 +221,11 @@
                     <label for="language" class="sr-only">Language</label>
                     <div class="relative">
                         <select id="language" name="language" class="appearance-none block w-full bg-none bg-gray-700 border border-transparent rounded-md py-2 pl-3 pr-10 text-base text-white focus:outline-none focus:ring-white focus:border-white sm:text-sm">
-                        <option selected>English</option>
-                        <option>French</option>
+                        <option selected>Español</option>
+                        <option>Ingles</option>
                         <option>German</option>
                         <option>Japanese</option>
-                        <option>Spanish</option>
+                        <option>frances</option>
                         </select>
                         <div class="pointer-events-none absolute inset-y-0 right-0 px-2 flex items-center">
                         <!-- Heroicon name: solid/chevron-down -->
