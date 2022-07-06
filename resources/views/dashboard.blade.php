@@ -33,10 +33,39 @@
     </div>
 
     <div class="max-w-7xl mx-auto relative bg-white pt-16 pb-32 overflow-hidden">
+        <div class="">
+          <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+            <div class="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
+              <div>
+                <div>
+                  <span class="h-12 w-12 rounded-md flex items-center justify-center bg-indigo-600">
+                    <!-- Heroicon name: outline/sparkles -->
+                    <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="mt-6">
+                  <h2 class="text-3xl font-extrabold tracking-tight text-gray-900">Pagina Web / Carrito de Compras</h2>
+                  <p class="mt-4 text-lg text-gray-500">Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.</p>
+                  <div class="flex justify-between mt-6">
+                    <a href="#" class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700"> Contratar</a>
+                    <a href="#" class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gray-600 hover:bg-gray-700"> Catalogo de Proyectos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
+              <div class="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-4/6 h">
+                <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="https://okhosting.com/resources/uploads/2014/08/tipos-de-paginas-web1.jpg" alt="Customer profile user interface">
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="relative">
           <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
             <div class="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
-              <div>
+              <div class="mt-12">
                 <div>
                   <span class="h-12 w-12 rounded-md flex items-center justify-center bg-indigo-600">
                     <!-- Heroicon name: outline/inbox -->
@@ -76,35 +105,7 @@
             </div>
           </div>
         </div>
-        <div class="mt-24">
-          <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-            <div class="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
-              <div>
-                <div>
-                  <span class="h-12 w-12 rounded-md flex items-center justify-center bg-indigo-600">
-                    <!-- Heroicon name: outline/sparkles -->
-                    <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                    </svg>
-                  </span>
-                </div>
-                <div class="mt-6">
-                  <h2 class="text-3xl font-extrabold tracking-tight text-gray-900">Pagina Web / Carrito de Compras</h2>
-                  <p class="mt-4 text-lg text-gray-500">Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.</p>
-                  <div class="flex justify-between mt-6">
-                    <a href="#" class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700"> Contratar</a>
-                    <a href="#" class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gray-600 hover:bg-gray-700"> Catalogo de Proyectos</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
-              <div class="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-4/6 h">
-                <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="https://okhosting.com/resources/uploads/2014/08/tipos-de-paginas-web1.jpg" alt="Customer profile user interface">
-              </div>
-            </div>
-          </div>
-        </div>
+        
     </div>
 
     <!--
