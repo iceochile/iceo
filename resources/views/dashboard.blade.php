@@ -14,7 +14,7 @@
                   <span class="block xl:inline">Project Management</span>
                   <span class="block text-indigo-600 xl:inline">Controla Tu empresa de Forma Online</span>
                 </h1>
-                <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Creamos la realidad virtual que tu empresa necesita, desde una simple pagina web o carrito de compras, hasta flexibles aplicaciones web que te permitirán plasmar tu visión, simplificando labores ó transformando digitalmente tu negocio</p>
+                <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Creamos la realidad virtual que tu empresa necesita, desde una simple pagina web o carrito de compras, hasta flexibles aplicaciones web a medida.</p>
                 <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div class="rounded-md shadow">
                     <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"> Ver Productos </a>
@@ -46,8 +46,8 @@
                   </span>
                 </div>
                 <div class="mt-6">
-                  <h2 class="text-3xl font-extrabold tracking-tight text-gray-900">Pagina Web / Carrito de Compras</h2>
-                  <p class="mt-4 text-lg text-gray-500">Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.</p>
+                  <h2 class="text-3xl font-extrabold tracking-tight text-gray-900">Pagina Web / Carrito de Compras / Intranet</h2>
+                  <p class="mt-4 text-lg text-gray-500">Presenta en todo el mundo tu empresa con cualquiera de nuestros productos. También podrás simplificar las labores del trabajo o incluso transforma digitalmente tu negocio desarrollando tu propia intranet </p>
                   <div class="flex justify-between mt-6">
                     <a href="#" class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700"> Contratar</a>
                     <a href="#" class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gray-600 hover:bg-gray-700"> Catalogo de Proyectos</a>
