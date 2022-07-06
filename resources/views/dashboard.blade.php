@@ -11,10 +11,10 @@
             <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-0 lg:px-8 xl:pt-14">
               <div class="sm:text-center lg:text-left pt-0 md:pt-10">
                 <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                  <span class="block xl:inline">Project Management</span>
+                  <span class="block xl:inline">Becoming a Project Manager</span>
                   <span class="block text-indigo-600 xl:inline">Controla Tu empresa de Forma Online</span>
                 </h1>
-                <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Creamos la realidad virtual que tu empresa necesita, desde una simple pagina web con carrito de compras, hasta flexibles soluciones a medida que llevamos a tu propia aplicación web y móvil.</p>
+                <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Creamos la realidad virtual que tus proyectos necesitan, desde una simple pagina web con carrito de compras, hasta flexibles soluciones a medida que llevamos a tu propia sucursal u oficina virtual.</p>
                 <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                       @auth
                         <div class="rounded-md shadow">
