@@ -32,6 +32,31 @@
                 <div class="w-full flex items-center justify-between p-6 space-x-6">
                 <div class="flex-1 truncate">
                     <div class="flex items-center space-x-3">
+                    <h3 class="text-gray-900 text-sm font-medium truncate">i-ceo</h3>
+                    <span class="flex-shrink-0 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full">Activo</span>
+                    </div>
+                    <p class="mt-1 text-gray-500 text-sm truncate">$703.260</p>
+                </div>
+                <img class="w-10 h-10 bg-gray-300 rounded-full flex-shrink-0" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60" alt="">
+                </div>
+                <div>
+                <div class="-mt-px flex divide-x divide-gray-200">
+                    
+                    <div class="-ml-px w-0 flex-1 flex">
+                    <a href="tel:+1-202-555-0170" class="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg hover:text-gray-500">
+                        <!-- Heroicon name: solid/phone -->
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                        </svg>
+                        <span class="ml-3">Ver detalles</span>
+                    </a>
+                    </div>
+                </div>
+                </div>
+            </li>
+            <li class="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200">
+                <div class="w-full flex items-center justify-between p-6 space-x-6">
+                <div class="flex-1 truncate">
+                    <div class="flex items-center space-x-3">
                     <h3 class="text-gray-900 text-sm font-medium truncate">Veggiefood</h3>
                     <span class="flex-shrink-0 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full">Activo</span>
                     </div>
