@@ -62,7 +62,7 @@
                     </div>
                     <p class="mt-1 text-gray-500 text-sm truncate">$250.320</p>
                 </div>
-                <img class="w-16 h-10 flex-shrink-0 object-contain" src="https://veggiefood.cl/img/veggie-food-logo-1621455395.jpg" alt="">
+                <img class="w-14 h-10 flex-shrink-0 object-contain" src="https://veggiefood.cl/img/veggie-food-logo-1621455395.jpg" alt="">
                 </div>
                 <div>
                 <div class="-mt-px flex divide-x divide-gray-200">
