@@ -12,7 +12,7 @@
                     </div>
                     <p class="mt-1 text-gray-500 text-sm truncate">$1.403.260</p>
                 </div>
-                <img class="w-10 h-10 bg-gray-300 rounded-full flex-shrink-0" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60" alt="">
+                <img class="w-10 h-10 flex-shrink-0 object-contain" src="https://riderschilenos.cl/img/logo.png" alt="">
                 </div>
                 <div>
                 <div class="-mt-px flex divide-x divide-gray-200">
@@ -37,7 +37,7 @@
                     </div>
                     <p class="mt-1 text-gray-500 text-sm truncate">$703.260</p>
                 </div>
-                <img class="w-10 h-10 bg-gray-300 rounded-full flex-shrink-0" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60" alt="">
+                <img class="w-10 h-10 flex-shrink-0 object-contain" src="https://icones.pro/wp-content/uploads/2021/04/icone-internet-noire.png" alt="">
                 </div>
                 <div>
                 <div class="-mt-px flex divide-x divide-gray-200">
@@ -62,7 +62,7 @@
                     </div>
                     <p class="mt-1 text-gray-500 text-sm truncate">$250.320</p>
                 </div>
-                <img class="w-10 h-10 bg-gray-300 rounded-full flex-shrink-0" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60" alt="">
+                <img class="w-16 h-10 flex-shrink-0 object-contain" src="https://veggiefood.cl/img/veggie-food-logo-1621455395.jpg" alt="">
                 </div>
                 <div>
                 <div class="-mt-px flex divide-x divide-gray-200">
