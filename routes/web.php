@@ -27,3 +27,7 @@ Route::get('como-funciona',[HomeController::class,'comofunciona'])->name('como-f
 Route::get('productos',[HomeController::class,'productos'])->name('productos');
 
 Route::resource('tienda', TiendaController::class)->names('tiendas');
+
+Route::get('{tienda}/trabajadores',[TiendaController::class,'horastrabajadores'])->name('horas.trabajador');
+
+Route::get('{tienda}/gastos',[TiendaController::class,'gastostienda'])->name('gastos.tienda');

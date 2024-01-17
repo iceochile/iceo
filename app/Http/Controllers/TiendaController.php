@@ -86,6 +86,16 @@ class TiendaController extends Controller
         return view('tiendas.show',compact('tienda'));
     }
 
+    public function horastrabajadores(Tienda $tienda)
+    {
+        return view('tiendas.horastrabajadores',compact('tienda'));
+    }
+
+    public function gastostienda(Tienda $tienda)
+    {
+        return view('tiendas.gastostienda',compact('tienda'));
+    }
+
     /**
      * Show the form for editing the specified resource.
      *
