@@ -1,66 +1,66 @@
 <x-app-layout>
 
     <h1 class="text-center font-bold text-3xl my-12"> Mis negocios</h1>
-<div class="max-w-7xl mx-auto relative overflow-hidden my-10">
-    
-        <ul role="list" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 px-4">
-            @if ($tiendas->count()>0)
-                @foreach ($tiendas as $tienda)
-                    <li class="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200">
-                        <div class="w-full flex items-center justify-between p-6 space-x-6">
-                        <div class="flex-1 truncate">
-                            <div class="flex items-center space-x-3">
-                            <h3 class="text-gray-900 text-sm font-medium truncate">{{$tienda->name}}</h3>
-                            <span class="flex-shrink-0 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full">Activo</span>
-                            </div>
-                            <p class="mt-1 text-gray-500 text-sm truncate">$1.403.260</p>
-                        </div>
-                        @if ($tienda->logo)
-                            <img class="w-10 h-10 flex-shrink-0 object-contain" src="{{Storage::url($serie->image->url)}}" alt="">
-                        
-                        @else
-                            <img class="w-10 h-10 flex-shrink-0 object-contain" src="{{asset('home/icono2.ico')}}" alt="">
-                        
-                        @endif
-                            
-                        </div>
-                        <div>
-                        <div class="-mt-px flex divide-x divide-gray-200">
-                            
-                            <div class="-ml-px w-0 flex-1 flex">
-                            <a href="{{route('tiendas.show',$tienda)}}" class="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg hover:text-gray-500">
-                                <!-- Heroicon name: solid/phone -->
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
-                                </svg>
-                                <span class="ml-3">Ver detalles</span>
-                            </a>
-                            </div>
-                        </div>
-                        </div>
-                    </li>
-                @endforeach
-            @endif
-            <li class="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200">
-         
-                <div class="-mt-px flex divide-x divide-gray-200">
-                    
-                    <div class="-ml-px w-0 flex-1 flex my-10">
-                    <a href="{{route('tiendas.create')}}" class="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg hover:text-gray-500">
-                        <!-- Heroicon name: solid/phone -->
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                        </svg>
-                        <span class="ml-3">Agregar mi negocio</span>
-                    </a>
-                    </div>
-                </div>
-                </div>
-            </li>
-        </ul>
-   
-
+    <div class="max-w-7xl mx-auto relative overflow-hidden my-10">
         
-   
-</div>
+            <ul role="list" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 px-4">
+                @if ($tiendas->count()>0)
+                    @foreach ($tiendas as $tienda)
+                        <li class="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200">
+                            <div class="w-full flex items-center justify-between p-6 space-x-6">
+                            <div class="flex-1 truncate">
+                                <div class="flex items-center space-x-3">
+                                <h3 class="text-gray-900 text-sm font-medium truncate">{{$tienda->name}}</h3>
+                                <span class="flex-shrink-0 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full">Activo</span>
+                                </div>
+                                <p class="mt-1 text-gray-500 text-sm truncate">$1.403.260</p>
+                            </div>
+                            @if ($tienda->logo)
+                                <img class="w-10 h-10 flex-shrink-0 object-contain" src="{{Storage::url($serie->image->url)}}" alt="">
+                            
+                            @else
+                                <img class="w-10 h-10 flex-shrink-0 object-contain" src="{{asset('home/icono2.ico')}}" alt="">
+                            
+                            @endif
+                                
+                            </div>
+                            <div>
+                            <div class="-mt-px flex divide-x divide-gray-200">
+                                
+                                <div class="-ml-px w-0 flex-1 flex">
+                                <a href="{{route('tiendas.show',$tienda)}}" class="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg hover:text-gray-500">
+                                    <!-- Heroicon name: solid/phone -->
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                                    </svg>
+                                    <span class="ml-3">Ver detalles</span>
+                                </a>
+                                </div>
+                            </div>
+                            </div>
+                        </li>
+                    @endforeach
+                @endif
+                <li class="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200">
+            
+                    <div class="-mt-px flex divide-x divide-gray-200">
+                        
+                        <div class="-ml-px w-0 flex-1 flex my-10">
+                        <a href="{{route('tiendas.create')}}" class="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg hover:text-gray-500">
+                            <!-- Heroicon name: solid/phone -->
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            <span class="ml-3">Agregar mi negocio</span>
+                        </a>
+                        </div>
+                    </div>
+                    </div>
+                </li>
+            </ul>
+    
+
+            
+    
+    </div>
 
     <footer class="bg-gray-800" aria-labelledby="footer-heading">
             <h2 id="footer-heading" class="sr-only">Footer</h2>
