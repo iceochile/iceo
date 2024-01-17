@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="max-w-7xl mx-auto relative overflow-hidden mb-8">
+    <div class="max-w-7xl mx-auto relative overflow-hidden pb-8">
         <div class="container py-2 md:py-8">
             
             <div class="card">
