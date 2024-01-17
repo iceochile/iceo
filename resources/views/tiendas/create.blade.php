@@ -72,7 +72,7 @@
 
                     
 
-                        <div class="flex justify-center">
+                        <div class="flex justify-center my-2">
                             {!! Form::submit('Crear negocio', ['class'=>'font-bold py-2 px-4 rounded bg-gray-500 text-white cursor-pointer']) !!}
                         </div>
 
