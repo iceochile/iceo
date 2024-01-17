@@ -20,8 +20,10 @@ Route::get('/', [HomeController::class,'dashboard'])->name('home');
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
-    'verified'])->group(function () {Route::get('/dashboard', function () { return view('welcome'); })->name('dashboard');});
+    'verified'])->group(function () {Route::get('dashboard', function () { return view('welcome'); })->name('dashboard');});
 
-Route::get('como-funciona',[HomeController::class,'index'])->name('como-funciona');
+Route::get('como-funciona',[HomeController::class,'comofunciona'])->name('como-funciona');
+
+Route::get('productos',[HomeController::class,'productos'])->name('productos');
 
 Route::resource('tienda', TiendaController::class)->names('tiendas');

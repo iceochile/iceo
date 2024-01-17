@@ -68,7 +68,7 @@
             </div>
             <div class="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
               <div class="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-4/6 h">
-                <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="https://okhosting.com/resources/uploads/2014/08/tipos-de-paginas-web1.jpg" alt="Customer profile user interface">
+                <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="https://okhosting.com/wp-content/uploads/2014/08/tipos-de-paginas-web1.jpg" alt="Customer profile user interface">
               </div>
             </div>
           </div>

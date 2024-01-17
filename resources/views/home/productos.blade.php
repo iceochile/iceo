@@ -1,141 +1,62 @@
 <x-app-layout>
 
-    <div class="max-w-7xl mx-auto relative bg-white overflow-hidden mt-2">
-        <div class="max-w-7xl mx-auto">
-          <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-            <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-              <polygon points="50,0 100,0 50,100 0,100" />
+  <div class="relative overflow-hidden bg-white">
+    <!-- Decorative background image and gradient -->
+    <div aria-hidden="true" class="absolute inset-0">
+      <div class="absolute inset-0 mx-auto max-w-7xl overflow-hidden xl:px-8">
+        <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-sale-full-width.jpg" alt="" class="h-full w-full object-cover object-center">
+      </div>
+      <div class="absolute inset-0 bg-white bg-opacity-75"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-white via-white"></div>
+    </div>
+  
+    <!-- Callout -->
+    <section aria-labelledby="sale-heading" class="relative mx-auto flex max-w-7xl flex-col items-center px-4 pt-32 text-center sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:max-w-none">
+        <h2 id="sale-heading" class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">Get 25% off during our one-time sale</h2>
+        <p class="mx-auto mt-4 max-w-xl text-xl text-gray-600">Most of our products are limited releases that won't come back. Get your favorite items while they're in stock.</p>
+        <a href="#" class="mt-6 inline-block w-full rounded-md border border-transparent bg-gray-900 px-8 py-3 font-medium text-white hover:bg-cyan-800 sm:w-auto">Get access to our one-time sale</a>
+      </div>
+    </section>
+  
+    <!-- Testimonials -->
+    <section aria-labelledby="testimonial-heading" class="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8 lg:py-32">
+      <div class="mx-auto max-w-2xl lg:max-w-none">
+        <h2 id="testimonial-heading" class="text-2xl font-bold tracking-tight text-gray-900">What are people saying?</h2>
+  
+        <div class="mt-16 space-y-16 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
+          <blockquote class="sm:flex lg:block">
+            <svg width="24" height="18" viewBox="0 0 24 18" aria-hidden="true" class="flex-shrink-0 text-gray-300">
+              <path d="M0 18h8.7v-5.555c-.024-3.906 1.113-6.841 2.892-9.68L6.452 0C3.188 2.644-.026 7.86 0 12.469V18zm12.408 0h8.7v-5.555C21.083 8.539 22.22 5.604 24 2.765L18.859 0c-3.263 2.644-6.476 7.86-6.451 12.469V18z" fill="currentColor" />
             </svg>
-      
-         
-            <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-0 lg:px-8 xl:pt-14">
-              <div class="sm:text-center lg:text-left pt-0 md:pt-10">
-                <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                  <span class="block xl:inline">Becoming a Project Manager</span>
-                  <span class="block text-indigo-600 xl:inline">Controla Tu empresa de Forma Online</span>
-                </h1>
-                <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Creamos la realidad virtual que tus proyectos necesitan, desde una simple pagina web con carrito de compras, hasta flexibles soluciones a medida que llevamos a tu propia sucursal u oficina virtual.</p>
-                <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                      @auth
-                        <div class="rounded-md shadow">
-                          <a href="{{ route('login') }}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
-                          Intranet
-                        </a>
-                        </div>
-                      @else
-                          <div class="rounded-md shadow">
-                            <a href="{{ route('login') }}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
-                            Ingresar
-                          </a>
-                        </div>
-                      @endauth  
-                      
-                   
-                  <div class="mt-3 sm:mt-0 sm:ml-3">
-                    <a href="{{ route('como-funciona') }}" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"> ¿Como Funciona? </a>
-                  </div>
-                </div>
-              </div>
-            </main>
-          </div>
-        </div>
-        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="">
-        </div>
-    </div>
-
-    <div class="max-w-7xl mx-auto relative bg-white pt-16 pb-32 overflow-hidden">
-        <div class="">
-          <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-            <div class="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
-              <div>
-                <div>
-                  <span class="h-12 w-12 rounded-md flex items-center justify-center bg-indigo-600">
-                    <!-- Heroicon name: outline/sparkles -->
-                    <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                    </svg>
-                  </span>
-                </div>
-                <div class="mt-6">
-                  <h2 class="text-3xl font-extrabold tracking-tight text-gray-900">Pagina Web / Carrito de Compras / Intranet</h2>
-                  <p class="mt-4 text-lg text-gray-500">Con I-CEO no solo mejorarás la imágen de tu empresa con la mejor presencia web personzalizada rápida y flexible, también podrás simplificar labores de tus trabajadores ó transformar digitalmente tu negocio a través de soluciones a medida que llevamos al diseño y desarrollo de tu propia intranet web y móvil. </p>
-                  <div class="flex justify-between mt-6">
-                    <a href="#" class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700"> Contratar</a>
-                    <a href="#" class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gray-600 hover:bg-gray-700"> Catalogo de Proyectos</a>
-                  </div>
-                </div>
-              </div>
+            <div class="mt-8 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-10">
+              <p class="text-lg text-gray-600">My order arrived super quickly. The product is even better than I hoped it would be. Very happy customer over here!</p>
+              <cite class="mt-4 block font-semibold not-italic text-gray-900">Shehab , England</cite>
             </div>
-            <div class="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
-              <div class="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-4/6 h">
-                <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="https://okhosting.com/wp-content/uploads/2014/08/tipos-de-paginas-web1.jpg" alt="Customer profile user interface">
-              </div>
+          </blockquote>
+          <blockquote class="sm:flex lg:block">
+            <svg width="24" height="18" viewBox="0 0 24 18" aria-hidden="true" class="flex-shrink-0 text-gray-300">
+              <path d="M0 18h8.7v-5.555c-.024-3.906 1.113-6.841 2.892-9.68L6.452 0C3.188 2.644-.026 7.86 0 12.469V18zm12.408 0h8.7v-5.555C21.083 8.539 22.22 5.604 24 2.765L18.859 0c-3.263 2.644-6.476 7.86-6.451 12.469V18z" fill="currentColor" />
+            </svg>
+            <div class="mt-8 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-10">
+              <p class="text-lg text-gray-600">I had to return a purchase that didn’t fit. The whole process was so simple that I ended up ordering two new items!</p>
+              <cite class="mt-4 block font-semibold not-italic text-gray-900">Najib, malaysia</cite>
             </div>
-          </div>
+          </blockquote>
+          <blockquote class="sm:flex lg:block">
+            <svg width="24" height="18" viewBox="0 0 24 18" aria-hidden="true" class="flex-shrink-0 text-gray-300">
+              <path d="M0 18h8.7v-5.555c-.024-3.906 1.113-6.841 2.892-9.68L6.452 0C3.188 2.644-.026 7.86 0 12.469V18zm12.408 0h8.7v-5.555C21.083 8.539 22.22 5.604 24 2.765L18.859 0c-3.263 2.644-6.476 7.86-6.451 12.469V18z" fill="currentColor" />
+            </svg>
+            <div class="mt-8 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-10">
+              <p class="text-lg text-gray-600">Now that I’m on holiday for the summer, I’ll probably order a few more shirts. It’s just so convenient, and I know the quality will always be there.</p>
+              <cite class="mt-4 block font-semibold not-italic text-gray-900">Yousef, New York</cite>
+            </div>
+          </blockquote>
         </div>
-        <div class="relative">
-          <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-            <div class="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
-              <div class="mt-12">
-                <div>
-                  <span class="h-12 w-12 rounded-md flex items-center justify-center bg-indigo-600">
-                    <!-- Heroicon name: outline/inbox -->
-                    <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
-                    </svg>
-                  </span>
-                </div>
-                <div class="mt-6">
-                  <h2 class="text-3xl font-extrabold tracking-tight text-gray-900">Correo / email Corporativo</h2>
-                  <p class="mt-4 text-lg text-gray-500">Ofrecemos curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.</p>
-                  <div class="mt-6">
-                    <a href="#" class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700">Contratar </a>
-                  </div>
-                </div>
-              </div>
-              <div class="mt-8 border-t border-gray-200 pt-6">
-                <blockquote>
-                  <div>
-                    <p class="text-base text-gray-500">&ldquo;Cras velit quis eros eget rhoncus lacus ultrices sed diam. Sit orci risus aenean curabitur donec aliquet. Mi venenatis in euismod ut.&rdquo;</p>
-                  </div>
-                  <footer class="mt-3">
-                    <div class="flex items-center space-x-3">
-                      <div class="flex-shrink-0">
-                        <img class="h-6 w-6 rounded-full" src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="">
-                      </div>
-                      <div class="text-base font-medium text-gray-700">Marcia Hill, Digital Marketing Manager</div>
-                    </div>
-                  </footer>
-                </blockquote>
-              </div>
-            </div>
-            <div class="mt-12 sm:mt-16 lg:mt-0">
-              <div class="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-                <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="https://tailwindui.com/img/component-images/inbox-app-screenshot-1.jpg" alt="Inbox user interface">
-              </div>
-            </div>
-          </div>
-        </div>
-        
-    </div>
-
-    <!--
-        This example requires Tailwind CSS v2.0+ 
-        
-        This example requires some changes to your config:
-        
-        ```
-        // tailwind.config.js
-        module.exports = {
-            // ...
-            plugins: [
-            // ...
-            require('@tailwindcss/forms'),
-            ],
-        }
-        ```
-        -->
+      </div>
+    </section>
+  </div>
+  
     <footer class="bg-gray-800" aria-labelledby="footer-heading">
             <h2 id="footer-heading" class="sr-only">Footer</h2>
             <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">

@@ -12,9 +12,14 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function comofunciona()
     {
         return view('home.comofunciona');
+    }
+
+    public function productos()
+    {
+        return view('home.productos');
     }
 
     public function dashboard()

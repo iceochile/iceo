@@ -16,7 +16,7 @@
                         <x-jet-nav-link href="{{ route('como-funciona') }}" :active="request()->routeIs('dashboard')">
                             {{ __('¿Como funciona?') }}
                         </x-jet-nav-link>
-                        <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                        <x-jet-nav-link href="{{ route('productos') }}" :active="request()->routeIs('productos')">
                             {{ __('Productos') }}
                         </x-jet-nav-link>
                     </div>
@@ -160,7 +160,7 @@
                 <x-jet-responsive-nav-link href="{{ route('como-funciona') }}" :active="request()->routeIs('como-funciona')">
                     {{ __('¿Como Funciona?') }}
                 </x-jet-responsive-nav-link>
-                <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                <x-jet-responsive-nav-link href="{{ route('productos') }}" :active="request()->routeIs('productos')">
                     {{ __('Productos') }}
                 </x-jet-responsive-nav-link>
             </div>
@@ -269,7 +269,7 @@
                         <x-jet-nav-link href="{{ route('como-funciona') }}" :active="request()->routeIs('dashboard')">
                             {{ __('¿Como funciona?') }}
                         </x-jet-nav-link>
-                        <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                        <x-jet-nav-link href="{{ route('productos') }}" :active="request()->routeIs('productos')">
                             {{ __('Productos') }}
                         </x-jet-nav-link>
                     </div>
@@ -413,7 +413,7 @@
                 <x-jet-responsive-nav-link href="{{ route('como-funciona') }}" :active="request()->routeIs('como-funciona')">
                     {{ __('¿Como Funciona?') }}
                 </x-jet-responsive-nav-link>
-                <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                <x-jet-responsive-nav-link href="{{ route('productos') }}" :active="request()->routeIs('productos')">
                     {{ __('Productos') }}
                 </x-jet-responsive-nav-link>
             </div>
