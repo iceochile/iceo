@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TiendaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,13 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    if(auth()->user()){
-        return view('welcome');
-    }else{
-        return view('dashboard');
-    }
-})->name('home');
+Route::get('/', [HomeController::class,'dashboard'])->name('home');
 
 Route::middleware([
     'auth:sanctum',
@@ -28,3 +23,5 @@ Route::middleware([
     'verified'])->group(function () {Route::get('/dashboard', function () { return view('welcome'); })->name('dashboard');});
 
 Route::get('como-funciona',[HomeController::class,'index'])->name('como-funciona');
+
+Route::resource('tienda', TiendaController::class)->names('tiendas');

@@ -6,12 +6,19 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>i-CEO Chile</title>
-
+        <script src="https://cdn.tailwindcss.com"></script>
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
-
+        <link rel="shortcut icon" href="{{asset('home/icono2.ico')}}">
+       
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+         <!-- Scripts -->
+         @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+         <!-- Styles -->
+         @stack('css')
+         @livewireStyles
+
     </head>
     <body>
         <div class="font-sans text-gray-900 antialiased">

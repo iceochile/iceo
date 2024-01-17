@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Tienda;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -14,6 +15,16 @@ class HomeController extends Controller
     public function index()
     {
         return view('home.comofunciona');
+    }
+
+    public function dashboard()
+    {
+        if(auth()->user()){
+            $tiendas=Tienda::where('user_id',auth()->user()->id)->get();
+            return view('welcome',compact('tiendas'));
+        }else{
+            return view('dashboard');
+        }
     }
 
     /**
