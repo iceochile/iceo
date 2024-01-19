@@ -90,7 +90,9 @@
                                                       <tr class="hidden md:table-row">
                                                           <td class="text-center">1<br>1<br>1</td>
                                                             @foreach ($users as $user)
-                                                               <td class="text-center">{{$user->name}}</td>
+                                                               <td class="text-center">
+                                                                 
+                                                                 {{$user->name}}</td>
                                                             @endforeach
                                                          
                                                              
@@ -105,7 +107,24 @@
                                                                   </div>
                                                               </td>
                                                                @foreach ($users as $user)
-                                                                  <td class="w-1/6 min-w-[140px] text-center">{{$user->name}}</td>
+                                                                  <td class="w-1/6 min-w-[140px] text-center">
+                                                                     <p class="font-bold">{{strtoupper($user->name)}}<br></p>
+                                                                    
+                                                                     <form action="" method="post">
+                                                                        @csrf
+                                                                        <div class="mb-4">
+                                                                           <label for="hora_ingreso" class="block text-gray-700 text-sm font-bold mb-2">Hora de Ingreso:</label>
+                                                                           <input type="time" name="hora_ingreso" id="hora_ingreso" class="border rounded w-full py-2 px-3" value="12:00">
+                                                                       </div>
+                                                                       <div class="mb-4">
+                                                                           <label for="hora_salida" class="block text-gray-700 text-sm font-bold mb-2">Hora de Salida:</label>
+                                                                           <input type="time" name="hora_salida" id="hora_salida" class="border rounded w-full py-2 px-3" value="22:00">
+                                                                       </div>
+                                                                       <div>
+                                                                           <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded">Agregar</button>
+                                                                       </div>
+                                                                    </form>
+                                                                  </td>
                                                                @endforeach
                                                               
                                                               <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
