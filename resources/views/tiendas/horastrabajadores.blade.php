@@ -1,4 +1,8 @@
 <x-app-layout>
+
+@php
+   $dias=['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
+@endphp
     <!-- This is an example component -->
 <div>
     <nav class="bg-white border-b border-gray-200 md:fixed z-30 w-full">
@@ -52,402 +56,73 @@
           </div>
        </div>
     </nav>
-    <div class="flex overflow-hidden bg-white md:pt-16">
+    <div class="flex overflow-hidden bg-white">
        <aside id="sidebar" class="fixed hidden z-20 h-full top-0 left-0 pt-16 flex lg:flex flex-shrink-0 flex-col w-64 transition-width duration-75" aria-label="Sidebar">
             @livewire('tienda.nav-tiendas',['tienda_id'=>$tienda->id])
        </aside>
        <div class="bg-gray-900 opacity-50 hidden fixed inset-0 z-10" id="sidebarBackdrop"></div>
        <div id="main-content" class="h-full w-full bg-gray-50 relative overflow-y-auto lg:ml-64">
           <main>
-             <div class="pt-6 px-4">
+             <div class="px-4">
                     <h1 class="text-center my-4">HORAS TRABAJADORES</h1>
                     <section class="bg-white pb-20">
                         <div class="">
-                           <div class="flex flex-wrap -mx-4">
-                              <div class="w-full px-4">
-                                 <div class="max-w-full overflow-x-auto">
-                                    <table class="table-auto w-full">
-                                       <thead>
-                                          <tr class="bg-primary text-center">
-                                             <th
-                                                class="
-                                                w-1/6
-                                                min-w-[160px]
-                                                text-lg
-                                                font-semibold
-                                                text-white
-                                                py-4
-                                                lg:py-7
-                                                px-3
-                                                lg:px-4
-                                                border-l border-transparent
-                                                "
-                                                >
-                                                TLD
-                                             </th>
-                                             <th
-                                                class="
-                                                w-1/6
-                                                min-w-[160px]
-                                                text-lg
-                                                font-semibold
-                                                text-white
-                                                py-4
-                                                lg:py-7
-                                                px-3
-                                                lg:px-4
-                                                "
-                                                >
-                                                Duration
-                                             </th>
-                                             <th
-                                                class="
-                                                w-1/6
-                                                min-w-[160px]
-                                                text-lg
-                                                font-semibold
-                                                text-white
-                                                py-4
-                                                lg:py-7
-                                                px-3
-                                                lg:px-4
-                                                "
-                                                >
-                                                Registration
-                                             </th>
-                                             <th
-                                                class="
-                                                w-1/6
-                                                min-w-[160px]
-                                                text-lg
-                                                font-semibold
-                                                text-white
-                                                py-4
-                                                lg:py-7
-                                                px-3
-                                                lg:px-4
-                                                "
-                                                >
-                                                Renewal
-                                             </th>
-                                             <th
-                                                class="
-                                                w-1/6
-                                                min-w-[160px]
-                                                text-lg
-                                                font-semibold
-                                                text-white
-                                                py-4
-                                                lg:py-7
-                                                px-3
-                                                lg:px-4
-                                                "
-                                                >
-                                                Transfer
-                                             </th>
-                                             <th
-                                                class="
-                                                w-1/6
-                                                min-w-[160px]
-                                                text-lg
-                                                font-semibold
-                                                text-white
-                                                py-4
-                                                lg:py-7
-                                                px-3
-                                                lg:px-4
-                                                border-r border-transparent
-                                                "
-                                                >
-                                                Register
-                                             </th>
-                                          </tr>
-                                       </thead>
-                                       <tbody>
-                                          <tr>
-                                             <td
-                                                class="
-                                                text-center text-dark
-                                                font-medium
-                                                text-base
-                                                py-5
-                                                px-2
-                                                bg-[#F3F6FF]
-                                                border-b border-l border-[#E8E8E8]
-                                                "
-                                                >
-                                                .com
-                                             </td>
-                                             <td
-                                                class="
-                                                text-center text-dark
-                                                font-medium
-                                                text-base
-                                                py-5
-                                                px-2
-                                                bg-white
-                                                border-b border-[#E8E8E8]
-                                                "
-                                                >
-                                                1 Year
-                                             </td>
-                                             <td
-                                                class="
-                                                text-center text-dark
-                                                font-medium
-                                                text-base
-                                                py-5
-                                                px-2
-                                                bg-[#F3F6FF]
-                                                border-b border-[#E8E8E8]
-                                                "
-                                                >
-                                                $75.00
-                                             </td>
-                                             <td
-                                                class="
-                                                text-center text-dark
-                                                font-medium
-                                                text-base
-                                                py-5
-                                                px-2
-                                                bg-white
-                                                border-b border-[#E8E8E8]
-                                                "
-                                                >
-                                                $5.00
-                                             </td>
-                                             <td
-                                                class="
-                                                text-center text-dark
-                                                font-medium
-                                                text-base
-                                                py-5
-                                                px-2
-                                                bg-[#F3F6FF]
-                                                border-b border-[#E8E8E8]
-                                                "
-                                                >
-                                                $10.00
-                                             </td>
-                                             <td
-                                                class="
-                                                text-center text-dark
-                                                font-medium
-                                                text-base
-                                                py-5
-                                                px-2
-                                                bg-white
-                                                border-b border-r border-[#E8E8E8]
-                                                "
-                                                >
-                                                <a
-                                                   href="javascript:void(0)"
-                                                   class="
-                                                   border border-primary
-                                                   py-2
-                                                   px-6
-                                                   text-primary
-                                                   inline-block
-                                                   rounded
-                                                   hover:bg-primary hover:text-white
-                                                   "
-                                                   >
-                                                Sign Up
-                                                </a>
-                                             </td>
-                                          </tr>
-                                          <tr>
-                                             <td
-                                                class="
-                                                text-center text-dark
-                                                font-medium
-                                                text-base
-                                                py-5
-                                                px-2
-                                                bg-[#F3F6FF]
-                                                border-b border-l border-[#E8E8E8]
-                                                "
-                                                >
-                                                .com
-                                             </td>
-                                             <td
-                                                class="
-                                                text-center text-dark
-                                                font-medium
-                                                text-base
-                                                py-5
-                                                px-2
-                                                bg-white
-                                                border-b border-[#E8E8E8]
-                                                "
-                                                >
-                                                1 Year
-                                             </td>
-                                             <td
-                                                class="
-                                                text-center text-dark
-                                                font-medium
-                                                text-base
-                                                py-5
-                                                px-2
-                                                bg-[#F3F6FF]
-                                                border-b border-[#E8E8E8]
-                                                "
-                                                >
-                                                $75.00
-                                             </td>
-                                             <td
-                                                class="
-                                                text-center text-dark
-                                                font-medium
-                                                text-base
-                                                py-5
-                                                px-2
-                                                bg-white
-                                                border-b border-[#E8E8E8]
-                                                "
-                                                >
-                                                $5.00
-                                             </td>
-                                             <td
-                                                class="
-                                                text-center text-dark
-                                                font-medium
-                                                text-base
-                                                py-5
-                                                px-2
-                                                bg-[#F3F6FF]
-                                                border-b border-[#E8E8E8]
-                                                "
-                                                >
-                                                $10.00
-                                             </td>
-                                             <td
-                                                class="
-                                                text-center text-dark
-                                                font-medium
-                                                text-base
-                                                py-5
-                                                px-2
-                                                bg-white
-                                                border-b border-r border-[#E8E8E8]
-                                                "
-                                                >
-                                                <a
-                                                   href="javascript:void(0)"
-                                                   class="
-                                                   border border-primary
-                                                   py-2
-                                                   px-6
-                                                   text-primary
-                                                   inline-block
-                                                   rounded
-                                                   hover:bg-primary hover:text-white
-                                                   "
-                                                   >
-                                                Sign Up
-                                                </a>
-                                             </td>
-                                          </tr>
-                                          <tr>
-                                             <td
-                                                class="
-                                                text-center text-dark
-                                                font-medium
-                                                text-base
-                                                py-5
-                                                px-2
-                                                bg-[#F3F6FF]
-                                                border-b border-l border-[#E8E8E8]
-                                                "
-                                                >
-                                                .com
-                                             </td>
-                                             <td
-                                                class="
-                                                text-center text-dark
-                                                font-medium
-                                                text-base
-                                                py-5
-                                                px-2
-                                                bg-white
-                                                border-b border-[#E8E8E8]
-                                                "
-                                                >
-                                                1 Year
-                                             </td>
-                                             <td
-                                                class="
-                                                text-center text-dark
-                                                font-medium
-                                                text-base
-                                                py-5
-                                                px-2
-                                                bg-[#F3F6FF]
-                                                border-b border-[#E8E8E8]
-                                                "
-                                                >
-                                                $75.00
-                                             </td>
-                                             <td
-                                                class="
-                                                text-center text-dark
-                                                font-medium
-                                                text-base
-                                                py-5
-                                                px-2
-                                                bg-white
-                                                border-b border-[#E8E8E8]
-                                                "
-                                                >
-                                                $5.00
-                                             </td>
-                                             <td
-                                                class="
-                                                text-center text-dark
-                                                font-medium
-                                                text-base
-                                                py-5
-                                                px-2
-                                                bg-[#F3F6FF]
-                                                border-b border-[#E8E8E8]
-                                                "
-                                                >
-                                                $10.00
-                                             </td>
-                                             <td
-                                                class="
-                                                text-center text-dark
-                                                font-medium
-                                                text-base
-                                                py-5
-                                                px-2
-                                                bg-white
-                                                border-b border-r border-[#E8E8E8]
-                                                "
-                                                >
-                                                <a
-                                                   href="javascript:void(0)"
-                                                   class="
-                                                   border border-primary
-                                                   py-2
-                                                   px-6
-                                                   text-primary
-                                                   inline-block
-                                                   rounded
-                                                   hover:bg-primary hover:text-white
-                                                   "
-                                                   >
-                                                Sign Up
-                                                </a>
-                                             </td>
-                                          </tr>
-                                       </tbody>
-                                    </table>
-                                 </div>
+                         
+                           
+                           <div class="flex flex-col">
+                              <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                                  <div class="align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                                      <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+                                          <div class="overflow-x-auto">
+                                              <table class="min-w-full table divide-y divide-gray-200">
+                                                  <thead class="md:fixed">
+                                                      <tr class="bg-primary text-center">
+                                                          <th class="w-1/6 min-w-[140px] text-lg font-semibold text-white py-4 lg:pt-6 px-3 lg:px-4 border-l border-transparent">Día</th>
+                                                         @foreach ($users as $user)
+                                                            <th class="w-1/6 min-w-[140px] text-lg font-semibold text-white py-4 lg:pt-6 px-3 lg:px-4 border-l border-transparent">{{$user->name}}</th>
+                                                             
+                                                         @endforeach
+                                                        
+                                                          <th class="w-1/6 min-w-[140px] text-lg font-semibold text-white py-4 lg:pt-6 px-3 lg:px-4 border-r border-transparent">Detalle</th>
+                                                      </tr>
+                                                  </thead>
+                                                  <tbody class="bg-white divide-y divide-gray-200">
+                                                      <tr class="hidden md:table-row">
+                                                          <td class="text-center">1<br>1<br>1</td>
+                                                            @foreach ($users as $user)
+                                                               <td class="text-center">{{$user->name}}</td>
+                                                            @endforeach
+                                                         
+                                                             
+                                                          </td>
+                                                      </tr>
+                                                      @foreach ($daysOfMonth as $day)
+                                                          <tr>
+                                                              <td class="w-1/6 min-w-[140px] text-center">
+                                                                  <div class="items-center">
+                                                                      {{ $day->toDateString() }}<br>
+                                                                      {{ $dias[$day->dayOfWeek]}}
+                                                                  </div>
+                                                              </td>
+                                                               @foreach ($users as $user)
+                                                                  <td class="w-1/6 min-w-[140px] text-center">{{$user->name}}</td>
+                                                               @endforeach
+                                                              
+                                                              <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                                                  <a href="" class="text-indigo-600 hover:text-indigo-900">Ver detalle</a>
+                                                              </td>
+                                                          </tr>
+                                                      @endforeach
+                                                      <!-- More people... -->
+                                                  </tbody>
+                                              </table>
+                                          </div>
+                                      </div>
+                                  </div>
                               </div>
-                           </div>
+                          </div>
+                          
+
                         </div>
                      </section>
              </div>

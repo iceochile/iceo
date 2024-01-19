@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Tienda;
+use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Intervention\Image\Facades\Image;
@@ -87,13 +89,52 @@ class TiendaController extends Controller
     }
 
     public function horastrabajadores(Tienda $tienda)
-    {
+    {   // Obtener la fecha actual
+        $currentDate = Carbon::now();
+    
+        // Obtener el año actual
+        $year = $currentDate->year;
+    
+        // Obtener el mes actual
+        $month = $currentDate->month;
+
+        $startOfMonth = Carbon::create($year, $month, 1);
+
+        // Obtener el número de días en el mes
+        $numberOfDays = $startOfMonth->daysInMonth;
+
+        // Inicializar un array para almacenar los días del mes
+        $daysOfMonth = [];
+
+        // Generar la lista de días del mes
+        for ($i = 0; $i < $numberOfDays; $i++) {
+            $daysOfMonth[] = $startOfMonth->copy()->addDays($i);
+        }
+
+        $users = User::where('current_team_id',$tienda->id)->get();
+        
+        if ($users->count()>0) {
+            return view('tiendas.horastrabajadores',compact('tienda','daysOfMonth','users'));
+        } else {
+            return redirect()->route('listado.trabajadores',$tienda);
+        }
+      
+    }
+
+    public function ingresohorastrabajadores(Tienda $tienda, $year, $month)
+    {   
+
         return view('tiendas.horastrabajadores',compact('tienda'));
     }
 
     public function gastostienda(Tienda $tienda)
     {
         return view('tiendas.gastostienda',compact('tienda'));
+    }
+
+    public function listadotrabajadores(Tienda $tienda)
+    {   $users = User::where('current_team_id',$tienda->id)->get();
+        return view('tiendas.listadotrabajadores',compact('tienda','users'));
     }
 
     /**

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TiendaController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,4 +31,10 @@ Route::resource('tienda', TiendaController::class)->names('tiendas');
 
 Route::get('{tienda}/trabajadores',[TiendaController::class,'horastrabajadores'])->name('horas.trabajador');
 
+Route::get('{tienda}/listadotrabajadores',[TiendaController::class,'listadotrabajadores'])->name('listado.trabajadores');
+
+Route::get('{tienda}/horas/{year}/{month}',[TiendaController::class,'ingresohorastrabajadores'])->name('horas.ingreso');
+
 Route::get('{tienda}/gastos',[TiendaController::class,'gastostienda'])->name('gastos.tienda');
+
+Route::resource('user',UserController::class)->names('users');
