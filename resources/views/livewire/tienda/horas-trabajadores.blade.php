@@ -16,7 +16,6 @@
                                        
                                    @endforeach
                                   
-                                    <th class="w-1/6 min-w-[140px] text-lg font-semibold text-white py-4 lg:pt-6 px-3 lg:px-4 border-r border-transparent">Detalle</th>
                                 </tr>
                             </thead>
                             <tbody class="bg-white divide-y divide-gray-200">
@@ -136,9 +135,7 @@
                                             </td>
                                          @endforeach
                                         
-                                        <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                            <a href="" class="text-indigo-600 hover:text-indigo-900">Ver detalle</a>
-                                        </td>
+                                       
                                     </tr>
                                     @php
                                         $n+=1;
