@@ -1,4 +1,22 @@
 <x-app-layout>
+   @php
+                 $total=0;
+                 $horas=0;
+                 $extra=0;
+             @endphp
+              @foreach ($daysOfMonth as $day)
+                  @foreach ($users as $user)
+                     @if ($user->horas->where('fecha',$day->toDateString())->count()>0)
+                        @php
+                            $total+=$user->horas->where('fecha',$day->toDateString())->first()->precio*($user->horas->where('fecha',$day->toDateString())->first()->horas-($user->horas->where('fecha',$day->toDateString())->first()->colacion+$user->horas->where('fecha',$day->toDateString())->first()->extra))+($user->horas->where('fecha',$day->toDateString())->first()->precio_extra*($user->horas->where('fecha',$day->toDateString())->first()->extra));
+                            $horas+=$user->horas->where('fecha',$day->toDateString())->first()->horas-$user->horas->where('fecha',$day->toDateString())->first()->colacion;
+                            $extra+=$user->horas->where('fecha',$day->toDateString())->first()->extra;
+                        
+                        @endphp
+                     @endif                           
+                  @endforeach
+              @endforeach
+
     <!-- This is an example component -->
 <div>
     <nav class="bg-white border-b border-gray-200 md:fixed z-30 w-full">
@@ -13,7 +31,7 @@
                       <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                    </svg>
                 </button>
-                <a href="#" class="text-xl font-bold flex items-center lg:ml-2.5">
+                <a href="{{route('home')}}" class="text-xl font-bold flex items-center lg:ml-2.5">
                 <img src="https://demo.themesberg.com/windster/images/logo.svg" class="h-6 mr-2" alt="Windster Logo">
                 <span class="self-center whitespace-nowrap">{{$tienda->name}}</span>
                 </a>
@@ -87,7 +105,7 @@
                             <div class="bg-red-600 hover:bg-red-500 shadow rounded-lg p-4 sm:p-6 xl:p-8 mb-2 cursor-pointer">
                                 <div class="flex items-center">
                                 <div class="flex-shrink-0">
-                                    <span class="text-2xl sm:text-3xl leading-none font-normal text-white">$2.158.340</span>
+                                    <span class="text-2xl sm:text-3xl leading-none font-normal text-white">${{number_format($total)}}</span>
                                     <h3 class="text-base font-bold text-white">Control de Horas</h3>
                                 </div>
                                 <div class="ml-5 w-0 flex items-center justify-end flex-1 text-white text-base font-bold">

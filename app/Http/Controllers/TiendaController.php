@@ -74,7 +74,7 @@ class TiendaController extends Controller
                     ]);
             }
 
-        return redirect()->route('tiendas.edit',$tienda);
+        return redirect()->route('tiendas.show',$tienda);
     }
 
     /**
@@ -84,8 +84,32 @@ class TiendaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(Tienda $tienda)
-    {
-        return view('tiendas.show',compact('tienda'));
+    {   // Obtener la fecha actual
+        $currentDate = Carbon::now();
+    
+        // Obtener el año actual
+        $year = $currentDate->year;
+    
+        // Obtener el mes actual
+        $month = $currentDate->month;
+
+        $startOfMonth = Carbon::create($year, $month, 1);
+
+        // Obtener el número de días en el mes
+        $numberOfDays = $startOfMonth->daysInMonth;
+
+        // Inicializar un array para almacenar los días del mes
+        $daysOfMonth = [];
+
+        // Generar la lista de días del mes
+        for ($i = 0; $i < $numberOfDays; $i++) {
+            $daysOfMonth[] = $startOfMonth->copy()->addDays($i);
+        }
+
+        $users = User::where('current_team_id',$tienda->id)->get();
+        
+
+        return view('tiendas.show',compact('tienda','daysOfMonth','users'));
     }
 
     public function horastrabajadores(Tienda $tienda)

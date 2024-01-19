@@ -17,7 +17,7 @@
                       <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                    </svg>
                 </button>
-                <a href="#" class="text-xl font-bold flex items-center lg:ml-2.5">
+                <a href="{{route('home')}}" class="text-xl font-bold flex items-center lg:ml-2.5">
                 <img src="https://demo.themesberg.com/windster/images/logo.svg" class="h-6 mr-2" alt="Windster Logo">
                 <span class="self-center whitespace-nowrap">{{$tienda->name}}</span>
                 </a>
