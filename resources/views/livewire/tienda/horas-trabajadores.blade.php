@@ -47,9 +47,11 @@
                                         </td>
                                        
                                          @foreach ($users as $user)
-                                            <td class="w-1/6 min-w-[140px] text-center">
+                                            <td class="w-1/6 min-w-[140px] text-center border-2 rounded-lg p-2">
                                                 @if ($user->horas->where('fecha',$day->toDateString())->count()>0)
                                                     @if ($user->horas->where('fecha',$day->toDateString())->first()->horas)
+                                                        <p class="font-bold mb-4 mt-6">{{strtoupper($user->name)}}<br></p>
+                                                
                                                         <div class="">
                                                             <h1 class="font-bold mb-2 border-b-2 mx-6 border-gray-900">
                                                                 ${{number_format($user->horas->where('fecha',$day->toDateString())->first()->precio*($user->horas->where('fecha',$day->toDateString())->first()->horas-($user->horas->where('fecha',$day->toDateString())->first()->colacion+$user->horas->where('fecha',$day->toDateString())->first()->extra))+($user->horas->where('fecha',$day->toDateString())->first()->precio_extra*($user->horas->where('fecha',$day->toDateString())->first()->extra)))}}
@@ -58,7 +60,7 @@
                                                         
                                                         <h1 class="font-bold">${{number_format($user->horas->where('fecha',$day->toDateString())->first()->precio*($user->horas->where('fecha',$day->toDateString())->first()->horas-($user->horas->where('fecha',$day->toDateString())->first()->colacion+$user->horas->where('fecha',$day->toDateString())->first()->extra)))}}</h1>
                                                         <h1 class="font-bold">+${{number_format($user->horas->where('fecha',$day->toDateString())->first()->precio_extra*($user->horas->where('fecha',$day->toDateString())->first()->extra))}}</h1>
-                                                        <div class="bg-primary rounded-lg py-4 font-bold text-white">
+                                                        <div class="bg-gray-400 rounded-lg py-4 font-bold text-white mb-6">
                                                             {{ $user->horas->where('fecha',$day->toDateString())->first()->horas}} Hrs.<br>
                                                             {{ -$user->horas->where('fecha',$day->toDateString())->first()->colacion}} Hr. Colación<br>
                                                             {{ $user->horas->where('fecha',$day->toDateString())->first()->horas-$user->horas->where('fecha',$day->toDateString())->first()->colacion}} Hrs. Total<br>
@@ -72,7 +74,7 @@
                                                     
                                                 @else
                                               
-                                                  <p class="font-bold">{{strtoupper($user->name)}}<br></p>
+                                                  <p class="font-bold mt-6">{{strtoupper($user->name)}}<br></p>
                                                 
                                                     <form action="{{route('horas.store')}}" method="post">
                                                         @csrf
@@ -118,8 +120,8 @@
 
                                                       
 
-                                                        <div>
-                                                            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded">Agregar</button>
+                                                        <div class="mb-6">
+                                                            <button type="submit" class="bg-green-700 text-white py-2 px-4 rounded">Agregar</button>
                                                         </div>
                                                     </form>
                                                 @endif
