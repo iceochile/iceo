@@ -65,84 +65,13 @@
           <main>
              <div class="px-4">
                     <h1 class="text-center my-4">HORAS TRABAJADORES</h1>
-                    <section class="bg-white pb-20">
-                        <div class="">
+                     <section class="bg-white pb-20">
+                        
                          
+                           @livewire('tienda.horas-trabajadores',['tienda_id'=>$tienda->id])
                            
-                           <div class="flex flex-col">
-                              <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-                                  <div class="align-middle inline-block min-w-full sm:px-6 lg:px-8">
-                                      <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
-                                          <div class="overflow-x-auto">
-                                              <table class="min-w-full table divide-y divide-gray-200">
-                                                  <thead class="md:fixed">
-                                                      <tr class="bg-primary text-center">
-                                                          <th class="w-1/6 min-w-[140px] text-lg font-semibold text-white py-4 lg:pt-6 px-3 lg:px-4 border-l border-transparent">Día</th>
-                                                         @foreach ($users as $user)
-                                                            <th class="w-1/6 min-w-[140px] text-lg font-semibold text-white py-4 lg:pt-6 px-3 lg:px-4 border-l border-transparent">{{$user->name}}</th>
-                                                             
-                                                         @endforeach
-                                                        
-                                                          <th class="w-1/6 min-w-[140px] text-lg font-semibold text-white py-4 lg:pt-6 px-3 lg:px-4 border-r border-transparent">Detalle</th>
-                                                      </tr>
-                                                  </thead>
-                                                  <tbody class="bg-white divide-y divide-gray-200">
-                                                      <tr class="hidden md:table-row">
-                                                          <td class="text-center">1<br>1<br>1</td>
-                                                            @foreach ($users as $user)
-                                                               <td class="text-center">
-                                                                 
-                                                                 {{$user->name}}</td>
-                                                            @endforeach
-                                                         
-                                                             
-                                                          </td>
-                                                      </tr>
-                                                      @foreach ($daysOfMonth as $day)
-                                                          <tr>
-                                                              <td class="w-1/6 min-w-[140px] text-center">
-                                                                  <div class="items-center">
-                                                                      {{ $day->toDateString() }}<br>
-                                                                      {{ $dias[$day->dayOfWeek]}}
-                                                                  </div>
-                                                              </td>
-                                                               @foreach ($users as $user)
-                                                                  <td class="w-1/6 min-w-[140px] text-center">
-                                                                     <p class="font-bold">{{strtoupper($user->name)}}<br></p>
-                                                                    
-                                                                     <form action="" method="post">
-                                                                        @csrf
-                                                                        <div class="mb-4">
-                                                                           <label for="hora_ingreso" class="block text-gray-700 text-sm font-bold mb-2">Hora de Ingreso:</label>
-                                                                           <input type="time" name="hora_ingreso" id="hora_ingreso" class="border rounded w-full py-2 px-3" value="12:00">
-                                                                       </div>
-                                                                       <div class="mb-4">
-                                                                           <label for="hora_salida" class="block text-gray-700 text-sm font-bold mb-2">Hora de Salida:</label>
-                                                                           <input type="time" name="hora_salida" id="hora_salida" class="border rounded w-full py-2 px-3" value="22:00">
-                                                                       </div>
-                                                                       <div>
-                                                                           <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded">Agregar</button>
-                                                                       </div>
-                                                                    </form>
-                                                                  </td>
-                                                               @endforeach
-                                                              
-                                                              <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                                                  <a href="" class="text-indigo-600 hover:text-indigo-900">Ver detalle</a>
-                                                              </td>
-                                                          </tr>
-                                                      @endforeach
-                                                      <!-- More people... -->
-                                                  </tbody>
-                                              </table>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
+                           
                           
-
-                        </div>
                      </section>
              </div>
           </main>
