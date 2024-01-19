@@ -8,8 +8,8 @@
                 <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
                     <div class="overflow-x-auto">
                         <table class="min-w-full table divide-y divide-gray-200">
-                            <thead class="md:fixed">
-                                <tr class="bg-primary text-center">
+                            <thead class="md:fixed py-4">
+                                <tr class="bg-gray-900 text-center">
                                     <th class="w-1/6 min-w-[140px] text-lg font-semibold text-white py-4 lg:pt-6 px-3 lg:px-4 border-l border-transparent">Día</th>
                                    @foreach ($users as $user)
                                       <th class="w-1/6 min-w-[140px] text-lg font-semibold text-white py-4 lg:pt-6 px-3 lg:px-4 border-l border-transparent">{{$user->name}}</th>
@@ -36,7 +36,7 @@
                                     
                                 @endphp
                                 @foreach ($daysOfMonth as $day)
-                                    <tr>
+                                    <tr class="@if($day->dayOfWeek==0) bg-red-300 @endif">
                                         <td class="w-1/6 min-w-[140px] text-center">
                                             <div class="items-center">
                                                 <section id="{{$n}}">
@@ -47,7 +47,7 @@
                                         </td>
                                        
                                          @foreach ($users as $user)
-                                            <td class="w-1/6 min-w-[140px] text-center border-2 rounded-lg p-2">
+                                            <td class="w-1/6 min-w-[140px] text-center border-2 rounded-lg p-2 ">
                                                 @if ($user->horas->where('fecha',$day->toDateString())->count()>0)
                                                     @if ($user->horas->where('fecha',$day->toDateString())->first()->horas)
                                                         <p class="font-bold mb-4 mt-6">{{strtoupper($user->name)}}<br></p>
@@ -109,12 +109,20 @@
                                                         <div class="flex">    
                                                             <div class="mb-4">
                                                                 <label for="precio" class="block text-gray-700 text-sm font-bold mb-2">Precio:</label>
-                                                                <input type="integer" name="precio" id="precio" class="border rounded w-full py-2 px-3 text-center" value="2500">
+                                                                <input type="integer" name="precio" id="precio" class="border rounded w-full py-2 px-3 text-center" value="3194">
                                                             </div>
-                                                            <div class="mb-4">
-                                                                <label for="precio_extra" class="block text-gray-700 text-sm font-bold mb-2">Precio:</label>
-                                                                <input type="integer" name="precio_extra" id="precio_extra" class="border rounded w-full py-2 px-3 text-center" value="4000">
-                                                            </div>
+                                                            @if ($day->dayOfWeek==0)
+                                                                <div class="mb-4">
+                                                                    <label for="precio_extra" class="block text-gray-700 text-sm font-bold mb-2">Precio:</label>
+                                                                    <input type="integer" name="precio_extra" id="precio_extra" class="border rounded w-full py-2 px-3 text-center" value="4500">
+                                                                </div>
+                                                            @else
+                                                                <div class="mb-4">
+                                                                    <label for="precio_extra" class="block text-gray-700 text-sm font-bold mb-2">Precio:</label>
+                                                                    <input type="integer" name="precio_extra" id="precio_extra" class="border rounded w-full py-2 px-3 text-center" value="3900">
+                                                                </div>
+                                                            @endif
+                                                           
                                                         </div>
 
 
