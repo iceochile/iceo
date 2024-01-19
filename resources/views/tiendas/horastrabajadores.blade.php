@@ -32,7 +32,36 @@
                       <input type="text" name="email" id="topbar-search" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-cyan-600 focus:border-cyan-600 block w-full pl-10 p-2.5" placeholder="Search">
                    </div>
                 </form>
+              
              </div>
+             @php
+                 $total=0;
+                 $horas=0;
+                 $extra=0;
+             @endphp
+              @foreach ($daysOfMonth as $day)
+                  @foreach ($users as $user)
+                     @if ($user->horas->where('fecha',$day->toDateString())->count()>0)
+                        @php
+                            $total+=$user->horas->where('fecha',$day->toDateString())->first()->precio*($user->horas->where('fecha',$day->toDateString())->first()->horas-($user->horas->where('fecha',$day->toDateString())->first()->colacion+$user->horas->where('fecha',$day->toDateString())->first()->extra))+($user->horas->where('fecha',$day->toDateString())->first()->precio_extra*($user->horas->where('fecha',$day->toDateString())->first()->extra));
+                            $horas+=$user->horas->where('fecha',$day->toDateString())->first()->horas-$user->horas->where('fecha',$day->toDateString())->first()->colacion;
+                            $extra+=$user->horas->where('fecha',$day->toDateString())->first()->extra;
+                        
+                        @endphp
+                     @endif                           
+                  @endforeach
+              @endforeach
+             <div class="hidden md:flex justify-center "> 
+               <button class="btn rounded-lg p-2 font-bold bg-gray-300 mr-2">
+                  Horas: {{number_format($horas)}}
+               </button>
+               <button class="btn rounded-lg p-2 font-bold bg-gray-300 mr-2">
+                  Extras: {{number_format($extra)}}
+               </button>
+               <button class="btn rounded-lg p-2 font-bold bg-gray-300 mr-2">
+                  TOTAL: ${{number_format($total)}}
+               </button>
+               </div>
              <div class="flex items-center">
                 <button id="toggleSidebarMobileSearch" type="button" class="lg:hidden text-gray-500 hover:text-gray-900 hover:bg-gray-100 p-2 rounded-lg">
                    <span class="sr-only">Search</span>
@@ -64,7 +93,19 @@
        <div id="main-content" class="h-full w-full bg-gray-50 relative overflow-y-auto lg:ml-64">
           <main>
              <div class="px-4">
+                 
                     <h1 class="text-center my-4">HORAS TRABAJADORES</h1>
+                    <div class="flex md:hidden justify-center mb-4"> 
+                        <button class="btn rounded-lg p-2 font-bold bg-gray-300 mr-2">
+                           Horas: {{number_format($horas)}}
+                        </button>
+                        <button class="btn rounded-lg p-2 font-bold bg-gray-300 mr-2">
+                           Extras: {{number_format($extra)}}
+                        </button>
+                        <button class="btn rounded-lg p-2 font-bold bg-gray-300 mr-2">
+                           TOTAL: ${{number_format($total)}}
+                        </button>
+                     </div>
                      <section class="bg-white pb-20">
                         
                          

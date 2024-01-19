@@ -45,11 +45,15 @@ class HoraController extends Controller
 
     $fecha_ingreso = Carbon::parse($request->fecha . ' ' . $request->hora_ingreso);
     $fecha_salida = Carbon::parse($request->fecha . ' ' . $request->hora_salida);
-
-    // Calcular la diferencia en horas
-    $diferencia_horas = $fecha_salida->diffInHours($fecha_ingreso);
-
-    $extra=$diferencia_horas-$request->contrato-$request->colacion;
+    
+    // Calcular la diferencia en minutos
+    $diferencia_minutos = $fecha_salida->diffInMinutes($fecha_ingreso);
+    
+    // Convertir la diferencia a horas con decimales
+    $diferencia_horas = $diferencia_minutos / 60;
+    
+    // Calcular las horas extra
+    $extra = $diferencia_horas - $request->contrato - $request->colacion;
 
         $tienda=Tienda::find($request->tienda_id);
     if ($extra>0) {

@@ -52,11 +52,11 @@
                                                     @if ($user->horas->where('fecha',$day->toDateString())->first()->horas)
                                                         <div class="">
                                                             <h1 class="font-bold mb-2 border-b-2 mx-6 border-gray-900">
-                                                                ${{number_format(($user->horas->where('fecha',$day->toDateString())->first()->precio*($user->horas->where('fecha',$day->toDateString())->first()->contrato))+($user->horas->where('fecha',$day->toDateString())->first()->precio_extra*($user->horas->where('fecha',$day->toDateString())->first()->extra)))}}
+                                                                ${{number_format($user->horas->where('fecha',$day->toDateString())->first()->precio*($user->horas->where('fecha',$day->toDateString())->first()->horas-($user->horas->where('fecha',$day->toDateString())->first()->colacion+$user->horas->where('fecha',$day->toDateString())->first()->extra))+($user->horas->where('fecha',$day->toDateString())->first()->precio_extra*($user->horas->where('fecha',$day->toDateString())->first()->extra)))}}
                                                             </h1>
                                                         </div>
                                                         
-                                                        <h1 class="font-bold">${{number_format($user->horas->where('fecha',$day->toDateString())->first()->precio*($user->horas->where('fecha',$day->toDateString())->first()->contrato))}}</h1>
+                                                        <h1 class="font-bold">${{number_format($user->horas->where('fecha',$day->toDateString())->first()->precio*($user->horas->where('fecha',$day->toDateString())->first()->horas-($user->horas->where('fecha',$day->toDateString())->first()->colacion+$user->horas->where('fecha',$day->toDateString())->first()->extra)))}}</h1>
                                                         <h1 class="font-bold">+${{number_format($user->horas->where('fecha',$day->toDateString())->first()->precio_extra*($user->horas->where('fecha',$day->toDateString())->first()->extra))}}</h1>
                                                         <div class="bg-primary rounded-lg py-4 font-bold text-white">
                                                             {{ $user->horas->where('fecha',$day->toDateString())->first()->horas}} Hrs.<br>
