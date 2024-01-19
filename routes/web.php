@@ -30,7 +30,7 @@ Route::get('productos',[HomeController::class,'productos'])->name('productos');
 
 Route::resource('tienda', TiendaController::class)->names('tiendas');
 
-Route::resource('hora', TiendaController::class)->names('tiendas');
+Route::resource('hora', HoraController::class)->names('horas');
 
 Route::get('{tienda}/trabajadores',[TiendaController::class,'horastrabajadores'])->name('horas.trabajador');
 
@@ -40,4 +40,4 @@ Route::get('{tienda}/horas/{year}/{month}',[TiendaController::class,'ingresohora
 
 Route::get('{tienda}/gastos',[TiendaController::class,'gastostienda'])->name('gastos.tienda');
 
-Route::resource('hora',HoraController::class)->names('horas');
+Route::resource('user',UserController::class)->names('users');
