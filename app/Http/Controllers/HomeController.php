@@ -26,7 +26,8 @@ class HomeController extends Controller
     {
         if(auth()->user()){
             $tiendas=Tienda::where('user_id',auth()->user()->id)->get();
-            return view('welcome',compact('tiendas'));
+            $tiendas2=Tienda::all();
+            return view('welcome',compact('tiendas','tiendas2'));
         }else{
             return view('dashboard');
         }
